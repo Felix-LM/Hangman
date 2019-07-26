@@ -61,7 +61,7 @@ def checkGuess(g, t):
 
 
 # Debugging
-print(words.words)
+
 
 # Main Execution
 
@@ -80,7 +80,9 @@ while not hidden == letters and tries > 0:
     res = checkGuess(getGuess(), tries)
     print(res[0])
     tries = res[1]
+    print()
     print(returnListAsString(hidden))
+    print()
 
 if tries <= 0:
     print("You lost! The word was: " + word)
